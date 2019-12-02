@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    android_orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android_layout_margin="5dp"
+    card_view_cardCornerRadius="10dp"
+    card_view_cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingPrefix">
+        <ImageView
+            android:id="@+id/spacecraftImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android_id="@+id/spacecraftImageView"
+            android_padding="5dp"
+            android_src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android_textAppearance="?android:attr/textAppearanceLarge"
+            android_text="Spacecraft Name"
+            android_id="@+id/nameTextView"
+            android_padding="5dp"
+            android_textColor="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/spacecraftImageView"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/propellantTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android_textAppearance="?android:attr/textAppearanceMedium"
+            android_text="Propellant"
+            android_textStyle="italic"
+            android_id="@+id/propellantTextView"
+            android_padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/spacecraftImageView"
+            android:layout_toRightOf="@id/spacecraftImageView"/>
+        <CheckBox
+            android:id="@+id/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android_id="@+id/myCheckBox"
+            android_text="Tech Exists?"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
